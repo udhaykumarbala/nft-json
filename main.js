@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -22,8 +22,9 @@ app.post('/create', (req, res) => {
     // create a json file with the data and save it
     const data = {
         id,
-        name,
-        ipfs,
+        "name":name,
+        "description":"This is a description of the project",
+        "image":ipfs,
         theme
     };
 
