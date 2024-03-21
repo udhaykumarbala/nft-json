@@ -23,7 +23,7 @@ app.post('/create', (req, res) => {
     const data = {
         id,
         "name":name,
-        "description":"This is a description of the project",
+        "description":"Music NFT created by ABC",
         "image":ipfs,
         theme
     };
